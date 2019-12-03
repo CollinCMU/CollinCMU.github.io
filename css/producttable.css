@@ -1,0 +1,56 @@
+table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3pt solid black;
+}
+
+table, th, td {
+    
+    border-collapse: collapse;
+    font-family: Tahoma;
+}
+
+th {
+    cursor: pointer;
+    font-size: 20pt;
+    border-bottom: 2pt solid black;
+    padding: 7pt;
+    background-color: #be3806;
+}
+
+th:hover {
+    background-color: #942b05;
+}
+
+tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+td {
+    font-size: 16pt;
+    text-align: right;
+    padding: 3pt;
+    padding-right: 5pt;
+    border-right: 2pt dashed black;
+}
+
+/* button {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #be3806;
+    border-style: none;
+
+    font-size: 20pt;
+    font-weight: bold;
+
+} */
+

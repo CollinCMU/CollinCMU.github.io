@@ -1,0 +1,48 @@
+h1 {
+    color: white;
+    font-family: Tahoma;
+    font-size: 42px;
+    margin: 14pt;
+    text-align: center;
+}
+.info {
+    width: 600px;
+    border: 7px solid #be3806;
+    padding: 10px 20px;
+    margin: 45pt auto;
+    background-color: #333;
+}
+fieldset {
+    margin: 10pt;
+    background-color: white;
+}
+legend {
+    font-family: Tahoma;
+    font-size: 16pt;
+    
+    padding: 5pt;
+    color: white;
+    background-color: #be3806;
+}
+label {
+
+    display: block;
+    text-align: left;
+    font-family: Tahoma;
+    font-size: 16pt;
+    margin: auto;
+
+    padding: 5pt 0;
+
+    
+
+    color: #be3806;
+}
+span {
+    text-align: right;
+    float: right;
+    
+    font-family: Tahoma;
+    font-size: 16pt;
+    color: black;
+}

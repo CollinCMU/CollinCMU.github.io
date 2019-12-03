@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/producttable.css">
+    <script src="javascript/admin.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="productimages.html">Product Images</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="registration.html">Registration</a>
+        <a href="order.html">Order</a>
+        <a class="active" href="admin.html">Admin</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <div id="loginwindow">
+        <fieldset class="login">
+            <legend>Administrator Login</legend>
+            <div class="fields">
+                <label>Username:</label>
+                <span><input type="text" id="uname"></span><br>
+                <label>Password:</label>
+                <span><input type="password" id="pass"><br></span>
+            </div>
+            <input type="button" id="submit" value="Submit">
+        </fieldset>
+    </div>
+
+    <div class="admintools" id="admintools" style="display:none">
+        <fieldset>
+            <legend>Administrator Tools</legend>
+            <fieldset>
+                <legend>Add Inventory</legend>
+                <div class="fields">
+                    <label>Product:</label>
+                    <span><select name="" id="products"></select></span><br>
+                    <label>Qty:</label>
+                    <span><input type="text" id="prodqty"></span>
+
+                </div>
+                <input type="button" value="Add" id="addinv">
+            </fieldset>
+
+            <table id="itemTable">
+                <tbody>
+                    <tr>
+                        <th onclick=sortTable(0)>Item Name</th>
+                        <th onclick=sortTable(1)>Price</th>
+                        <th onclick=sortTable(2)>Qty</th>
+                        <th onclick=sortTable(3)>Ext Price</th>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>

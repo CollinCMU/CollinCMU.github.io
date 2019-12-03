@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Order Page</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/ordertable.css">
+
+    <!-- <link rel="stylesheet" href="css/producttable.css"> -->
+    <script src="javascript/orderhandler.js"></script>
+
+    <!-- <script src="javascript/jquery-3.4.1.js"></script>
+    <script src="javascript/jquery.validate.min.js"></script>
+    <script src="javascript/additional-methods.js"></script> -->
+    <!-- <script src="javascript/registration.js"></script> -->
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="productimages.html">Product Images</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="registration.html">Registration</a>
+        <a class="active" href="order.html">Order</a>
+        <a href="admin.html">Admin</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <p>Place an order for some of our finest products!</p>
+
+    <form class="regForm" action="invoice.html" method="get" id="order_form" onsubmit="return validateForm()">
+        <h1 class="regTitle">Order Form</h1>
+
+        <fieldset>
+            <legend>Customer Information</legend>
+            <!-- First / Last name -->
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name..." required><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name..." required><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="john@doe.com" required><br>
+            <label for="emailtwo">Re-enter email:</label>
+            <input type="email" name="emailtwo" id="emailtwo" placeholder="john@doe.com" required><br>
+
+            <!-- Zip -->
+            <label for="zip">Zipcode:</label>
+            <input type="number" min="5" name="zip" id="zip" placeholder="48858" required><br>
+        </fieldset>
+
+        <fieldset style="margin: 10pt; padding: 0;">
+            <!-- <legend>Products</legend> -->
+            <table id="itemTable" style="margin: 0; padding: 0;">
+                <tr>
+                    <th onclick=sortTable(0)>Product</th>
+                    <th onclick=sortTable(1)>Price</th>
+                    <th onclick=sortTable(2)>Available</th>
+                    <th>Qty</th>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <div class="buttons">
+            <input type="button" id="reset" value="Reset">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

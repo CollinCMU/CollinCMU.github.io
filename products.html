@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Products</title>
+    <link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/producttable.css">
+	<script src="javascript/producthandler.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class ="active" href="products.html">Products</a>
+        <a href="productimages.html">Product Images</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="registration.html">Registration</a>
+		<a href="order.html">Order</a>
+		<a href="admin.html">Admin</a>
+        <a href="references.html">References</a>
+    </div>  
+
+    <img class="THLogo" src="images/TimsHardwareLogo.png" alt="Logo">
+
+	<h1>Products</h1>
+
+	<p>Here are the fine products that we currently have in stock</p>
+
+	<table id="itemTable">
+		<tr>
+			<th onclick=sortTable(0)>Item Name</th>
+			<th onclick=sortTable(1)>Price</th>
+			<th onclick=sortTable(2)>Qty</th>
+			<th onclick=sortTable(3)>Ext Price</th>
+		</tr>
+	</table>
+
+</body>
+</html>

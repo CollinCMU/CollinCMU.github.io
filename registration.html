@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <!-- <link rel="stylesheet" href="css/text.css"> -->
+    <link rel="stylesheet" href="css/registration.css">
+
+    <script src="javascript/jquery-3.4.1.js"></script>
+    <script src="javascript/jquery.validate.min.js"></script>
+    <script src="javascript/additional-methods.js"></script>
+    <script src="javascript/registration.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="productimages.html">Product Images</a>
+        <a href="calendar.html">Calendar</a>
+        <a class="active" href="registration.html">Registration</a>
+        <a href="order.html">Order</a>
+        <a href="admin.html">Admin</a>
+        <a href="references.html">References</a>
+    </div>
+
+    <p>Register as a customer to receive emails about our promotions!</p>
+
+    <form class="regForm" action="confirmation.html" method="get" id="registration_form">
+        <h1 class="regTitle">Customer Registration Form</h1>
+        <fieldset>
+            <legend>Misc</legend>
+
+            <label for="date">Date:</label>
+            <input type="text" name="date" id="date" placeholder="MM/DD/YYYY"><br>
+
+            <label>Customer Type:</label>
+            <input type="radio" name="custtype" id="personal" value="Personal" checked>Personal
+            <input type="radio" name="custtype" id="business" value="Business">Business
+            <input type="radio" name="custtype" id="government" value="Government">Government<br>
+
+            <input type="checkbox" name="newcust" id="newcust" value="newcust">New Customer?<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Customer Information</legend>
+            <!-- First / Last name -->
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name..."><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name..."><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" placeholder="1234567"><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="john@doe.com"><br>
+            <label for="emailtwo">Re-enter email:</label>
+            <input type="text" name="emailtwo" id="emailtwo" placeholder="john@doe.com"><br>
+
+            <!-- State -->
+            <label>State:</label>
+            <select name="state" id="state"></select><br>
+
+            <!-- Zip -->
+            <label for="zip">Zipcode:</label>
+            <input type="text" name="zip" id="zip" placeholder="48858"><br>
+        </fieldset>
+        <div class="buttons">
+            <input type="button" id="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>

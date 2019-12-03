@@ -1,0 +1,42 @@
+body {
+    font-family: Tahoma;
+}
+.login {
+    width: 300px;
+}
+.admintools {
+    margin: 50pt auto;
+    width: 500px;
+}
+
+.fields {
+    margin: 12pt;
+}
+fieldset {
+    margin: 20pt auto;
+    border: 7px solid #333;
+}
+
+legend {
+    font-size: 14pt;
+    color: white;
+    background-color: #be3806;
+    padding: 6pt;
+}
+label {
+    float: left;
+    width: 100px;
+}
+span {
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px;
+}
+input {
+    width: 99%;
+}
+input[type="button"] {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
